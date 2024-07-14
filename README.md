@@ -33,8 +33,12 @@ VD:
     Chuỗi: "bat", Khóa: abt, Nhóm Anagram: {"aet":["eat","tea","ate"],"ant":["tan"],"abt":["bat"]}
 
 Problem 4: Sparse Array Rotation
-
-
+- Tạo 1 biến len với giá trị arr.length để lấy giá trị độ dài của mảng.
+- Tạo điều kiện cho biến step không được lớn hơn độ dài của mảng -1 là để dịch giá trị của từng phần tử trong mảng và sẽ bắt đầu từ 1 thay vì 0.
+- arr.slice(n).concat(arr.slice(0, step)):
+    + arr.slice(n) sẽ trả về phần của mảng bắt đầu từ giá trị của biến step đến cuối.
+    + arr.slice(0, step) sẽ trả về phần đầu của mảng cho tới giá trị của biến step
+    + .concat dùng để nối 2 mảng này lại với nhau
 
 PART 3: BASIC WEB DEVELOPMENT
 Problem 5: Dynamic HTML Page
